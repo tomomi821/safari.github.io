@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>サファリパーク | tomomi's portfolio</title>
+    <meta
+      name="description"
+      content="サファリパークは、都内のどこかにある広大なサファリパークです。"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Laila:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/d48eed0ec0.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div id="bar" class="l_header__bar"></div>
+    <div class="l_header__wrapper">
+      <header class="l_header">
+        <div class="l_header__inner">
+          <div class="e_heading-lv1">
+            <h1 class="e_heading-lv1__title">TomoSafariPark</h1>
+          </div>
+          <div class="c_hamburger" id="c_hamburger">
+            <span class="c_hamburger__line"></span>
+          </div>
+        </div>
+      </header>
+      <nav class="c_headerNav" id="c_headerNav">
+        <ul class="c_headerNav__list">
+          <li class="c_headerNav__item --animal">
+            <a href="#" class="c_headerNav__link">動物紹介</a>
+          </li>
+          <li class="c_headerNav__item --guide">
+            <a href="#" class="c_headerNav__link">パークガイド</a>
+          </li>
+          <li class="c_headerNav__item --fee">
+            <a href="#" class="c_headerNav__link">料金・チケット</a>
+          </li>
+          <li class="c_headerNav__item --access">
+            <a href="#" class="c_headerNav__link">交通アクセス</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main class="l_main">
+      <div class="l_main__inner">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture>
+                <source media="(min-width: 768px)" src="img/main_01.jpg" />
+                <source
+                  media="(max-width: 767px)"
+                  src="img/main-sp_01.jpg, img/main_01.jpg 2x"
+                />
+                <img src="img/main_01.jpg" alt="カモが行進をしている" />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source media="(min-width: 768px)" src="img/main_02.jpg" />
+                <source
+                  media="(max-width: 767px)"
+                  src="img/main-sp_02.jpg, img/main_02.jpg 2x"
+                />
+                <img
+                  src="img/main_02.jpg"
+                  alt="リスが木の実を口いっぱいに頬張っている"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source media="(min-width: 768px)" src="img/main_03.jpg" />
+                <source
+                  media="(max-width: 767px)"
+                  src="img/main-sp_03.jpg, img/main_03.jpg 2x"
+                />
+                <img
+                  src="img/main_03.jpg"
+                  alt="像達が雨の中道路を闊歩している様子"
+                />
+              </picture>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </main>
+    <section class="l_media">
+      <div class="l_media__inner">
+        <div class="e_heading-lv2 --events">
+          <h2 class="e_heading-lv2__title">イベント情報</h2>
+          <span class="e_heading-lv2__subtitle">Events</span>
+        </div>
+        <div class="c_cards">
+          <article class="c_cards__item">
+            <div class="c_card__body">
+              <h3 class="c_card__title">早朝ツアー</h3>
+              <p class="c_card__text">
+                夏ならではのイベント！早朝の動物をたくさん見よう！
+              </p>
+            </div>
+            <img src="img/event_03.jpg" alt="" class="c_card__image" />
+          </article>
+          <article class="c_cards__item">
+            <div class="c_card__body">
+              <h3 class="c_card__title">夕日を眺めながらディナー</h3>
+              <p class="c_card__text">
+                日没時、動物を眺めながらディナーはいかがでしょうか。
+              </p>
+            </div>
+            <img src="img/event_01.jpg" alt="" class="c_card__image" />
+          </article>
+          <article class="c_cards__item">
+            <div class="c_card__body">
+              <h3 class="c_card__title">サファリナイトツアー</h3>
+              <p class="c_card__text">
+                夜の野生の動物をたくさん見られる、大迫力の全面金網バスで敷地内をぐるっと1周！
+              </p>
+            </div>
+            <img src="img/event_02.jpg" alt="" class="c_card__image" />
+          </article>
+        </div>
+        <div class="e_button__wrapper">
+          <a href="#" class="e_button">もっと見る</a>
+        </div>
+      </div>
+    </section>
+    <form class="l_form">
+      <fieldset>
+        <div class="e_heading-lv2 --form">
+          <legend class="e_heading-lv2__subtitle">form</legend>
+        </div>
+        <div class="c_form__selectWrapper">
+          <h3 class="c_form__title">
+            <label for="selects" class="c_form__text">お問い合わせ種類</label
+            ><span class="c_form__note">必須 </span>
+          </h3>
+          <div class="c_form__selectContents">
+            <div class="c_form__selectInner">
+              <select name="select" id="selects">
+                <option value="">選択してください</option>
+                <option value="1">選択肢1</option>
+                <option value="2">選択肢2</option>
+                <option value="3">選択肢3</option>
+                <option value="4">選択肢4</option>
+                <option value="5">選択肢5</option>
+              </select>
+              <p class="c_form__validate --select">
+                <span class="material-symbols-outlined"> error </span
+                >いずれか１つをお選びください。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="c_form__inquiryWrapper">
+          <h3 class="c_form__title">
+            <label for="inquiry" class="c_form__text">お問い合わせ内容</label
+            ><span class="c_form__note">必須 </span>
+          </h3>
+          <div class="c_form__inquiryContents">
+            <textarea
+              name="inquiry"
+              id="inquiry"
+              cols="30"
+              rows="10"
+              placeholder="1000文字以内で入力してください。"
+            ></textarea>
+            <p class="c_form__validate --textArea">
+              <span class="material-symbols-outlined"> error </span
+              >1000文字以内で入力してください。<br />(現在はテスト用に10文字以内で設定しております。)
+            </p>
+          </div>
+        </div>
+        <div class="c_form__acceptArea">
+          <p>
+            <a href="#">ご利用規約</a>と<a href="#">プライバシーポリシー</a
+            >をご確認の上、<br />同意していただける場合は「同意する」にチェックを入れてください。
+          </p>
+          <label for="check" class="c_form__acceptCheck">
+            <input type="checkbox" id="check" />
+            <span>同意する</span>
+          </label>
+        </div>
+        <div class="c_form_button">
+          <button class="c_button__text" type="submit" disabled>
+            送信する
+          </button>
+        </div>
+      </fieldset>
+    </form>
+    <section class="l_slide">
+      <div class="l_slide__inner">
+        <div class="e_heading-lv2 --slide">
+          <h2 class="e_heading-lv2__title">動物紹介</h2>
+          <span class="e_heading-lv2__subtitle">Animals</span>
+        </div>
+        <div>
+          <ul class="c_introduction" role="list"></ul>
+        </div>
+        <div class="e_button__wrapper">
+          <a href="#" class="e_button">もっと見る</a>
+        </div>
+      </div>
+    </section>
+    <footer class="l_footer">
+      <div class="l_footer__inner">
+        <small class="e_footer__text">© tomomi corporation</small>
+      </div>
+    </footer>
+  </body>
+</html>
