@@ -1,7 +1,3 @@
-// export * from "./swiper.js";
-// export * from "./image.js";
-// export * from "./safari.js";
-"use strict";
 
 let introduction = document.querySelector(".c_introduction");
 const lists = [
